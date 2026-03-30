@@ -1,9 +1,8 @@
 @charset "utf-8";
 
 body {
-    background-color: rgb(3, 5, 44);
+    background-color: rgb(4, 5, 15);
     font-family: "JetBrains Mono", monospace;
-    margin: 0;
 }
 
 /* Contenedor principal */
@@ -17,9 +16,13 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
+    background-color: rgb(19, 21, 37);
+    padding:25px;
     align-items: center;
     gap: 20px;
     margin-top: 30px;
+    border: 5px solid rgb(32, 226, 200);
+    border-radius: 10px;
 }
 
 .header-text {
@@ -29,14 +32,12 @@ body {
 #Nombre1 {
     font-size: 50px;
     color: whitesmoke;
-    background-color: black;
     padding: 10px;
 }
 
 #Carrera {
     font-size: 25px;
     color: whitesmoke;
-    background-color: black;
     padding: 10px;
     margin-top: 10px;
 }
@@ -44,25 +45,33 @@ body {
 #links {
     font-size: 14px;
     color: whitesmoke;
-    background-color: black;
     padding: 10px;
     margin-top: 10px;
-    border: 2px solid cornflowerblue;
 }
 
 #FotoPerfil {
     width: 220px;
-    border: 5px double royalblue;
     border-radius: 5px;
 }
 
 /* TITLES */
-.tittles {
+.titles {
     text-align: center;
     margin: 30px 0;
     color: whitesmoke;
-    background: black;
+    background: rgb(19, 21, 37);
     padding: 10px;
+}
+
+#title1, #title2,
+.subtitles{
+    text-align:center;
+    margin:10px;
+    color:aliceblue;
+    background-color:black;
+    padding:15px;
+    border: 2px solid rgb(101, 243, 120);
+    border-radius:10px;
 }
 
 /* TWO COLUMNS */
@@ -90,12 +99,21 @@ body {
 }
 
 /* TEXT BLOCKS */
-#text1, #text2, #text4, #text5,
 #secu, #peri, #bach,
 #word, #pow, #repa,
-.proyects {
+.islands {
     background: black;
     color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    border-bottom: 5px solid;
+}
+
+#text1, #text2, #text4, #text5, .proyects,
+.texts{
+    background: black;
+    color: whitesmoke;
+    text-align:justify;
     padding: 10px;
     border-radius: 5px;
     border-bottom: 5px solid;
