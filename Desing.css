@@ -130,6 +130,9 @@ body {
 /* HR */
 hr {
     margin: 40px 0;
+    height: 5px;
+    background-color: white;
+    border: none;
 }
 
 /* FOOTER */
