@@ -1,8 +1,41 @@
 @charset "utf-8";
 
+/*Fonts*/
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('assets/fonts/JetBrainsMono-Bold.woff2') format('woff2');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('assets/fonts/JetBrainsMono-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('assets/fonts/JetBrainsMono-SemiBoldItalic.woff2') format('woff2');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+    font-style: italic;
+}
+
+/*Body*/
 body {
     background-color: rgb(4, 5, 15);
-    font-family: "JetBrains Mono", monospace;
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
 }
 
 /* Principal Container */
@@ -24,6 +57,7 @@ body {
     margin-top: 30px;
     border: 5px solid rgb(32, 226, 200);
     border-radius: 10px;
+    box-shadow: 0 0 15px rgba(32, 226, 200, 0.25);
 }
 
 .header-text {
@@ -31,6 +65,8 @@ body {
 }
 
 #name {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 800;
     font-size: 50px;
     color: whitesmoke;
     padding: 10px;
@@ -38,6 +74,9 @@ body {
 }
 
 #profession {
+    font-family: "JetBrains Mono", monospace;
+    font-style: italic;
+    font-weight: 600;
     font-size: 25px;
     color: whitesmoke;
     padding: 10px;
@@ -45,8 +84,7 @@ body {
 }
 
 #links {
-    width: 20%;
-    text-align: center;
+    width: 30%;
     color: whitesmoke;
     padding: 8px;
     margin-top: 10px;
@@ -55,7 +93,16 @@ body {
 .linksicons {
     width: 35px;
     height: 35px;
-    margin: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+a, .linksicons {
+    transition: all 0.3s ease;
+}
+
+.linksicons:hover {
+    transform: scale(1.1);
 }
 
 #photo {
@@ -67,6 +114,8 @@ body {
 
 /* TITLES */
 .titles {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 600;
     text-align: center;
     margin: 30px 0;
     color: whitesmoke;
@@ -75,10 +124,24 @@ body {
 }
 
 .subtitles{
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 600;
     text-align: center;
     padding: 15px;
     border: 2px solid rgb(101, 243, 120);
     border-radius: 10px;
+}
+
+.project_name {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.names {
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    font-size: 18px;
 }
 
 /* TWO COLUMNS */
@@ -121,7 +184,7 @@ body {
     border-bottom: 5px solid;  
 }
 
-#about, #info, 
+#about, #info,
 .projects {
     text-align: justify;
     padding: 10px;
@@ -136,7 +199,8 @@ body {
 
 /* Section Colors */
 .skills { border-color: mediumpurple; }
-.projects { border: 5px solid mediumspringgreen; }
+.projects { border: 5px solid mediumspringgreen; 
+            box-shadow: 0 0 10px rgba(0, 255, 127, 0.2); }
 .academic_islands { border-color: mediumturquoise; }
 .certifications_islands { border-color: mediumseagreen; }
 #about { border-color: mediumorchid; }
@@ -152,6 +216,8 @@ hr {
 
 /* FOOTER */
 footer {
+    font-weight: 600;
+    font-family: "JetBrains Mono", monospace;
     text-align: center;
     color: whitesmoke;
     margin: 30px 0;
