@@ -98,9 +98,12 @@ body {
 
 /*LINKS ICONS*/
 #links {
-    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
     padding: 8px;
     margin-top: 10px;
+    width: 30%;
 }
 
 .linksicons {
@@ -120,7 +123,8 @@ a, .linksicons {
 
 /*DRAG KILLER*/
 img {
-    pointer-events: none;    
+    -webkit-user-drag: none;
+    user-select: none;   
 }
 
 /*PROFILE PICTURE*/
@@ -250,30 +254,4 @@ footer {
     text-align: center;
     color: rgb(245, 245, 245);
     margin: 30px 0;
-}
-
-.copied-toast {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-
-    background: rgb(32, 226, 200);
-    color: black;
-
-    padding: 10px 15px;
-    border-radius: 8px;
-
-    font-family: monospace;
-    font-weight: bold;
-
-    z-index: 999999;
-
-    box-shadow: 0 0 10px rgba(0,0,0,0.4);
-}
-
-@keyframes fadeInOut {
-    0% { opacity: 0; transform: translateY(10px); }
-    20% { opacity: 1; transform: translateY(0); }
-    80% { opacity: 1; }
-    100% { opacity: 0; transform: translateY(10px); }
 }
