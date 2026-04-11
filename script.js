@@ -20,7 +20,6 @@ document.querySelectorAll(".copy").forEach(el => {
 
         setTimeout(() => {
             el.style.color = "";
-
         }, 300);
     });
 
