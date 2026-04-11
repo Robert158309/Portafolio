@@ -12,4 +12,18 @@ function typeEffect() {
 
 }
 
+document.querySelectorAll(".copy").forEach(el => {
+
+    el.addEventListener("click", () => {
+
+        navigator.clipboard.writeText(el.innerText);
+
+        setTimeout(() => {
+            el.style.color = "";
+
+        }, 300);
+    });
+
+});
+
 typeEffect();

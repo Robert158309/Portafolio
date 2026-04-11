@@ -36,9 +36,12 @@ body {
     background-color: rgb(4, 5, 15);
     font-family: "Inter", sans-serif;
     line-height: 1.6;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-/* Principal Container */
+/* PRINCIPAL CONTAINER */
 .container {
     width: 90%;
     max-width: 1100px;
@@ -68,17 +71,18 @@ body {
     font-family: "JetBrains Mono", monospace;
     font-weight: 800;
     font-size: 50px;
-    color: whitesmoke;
+    color: rgb(245, 245, 245);
     padding: 10px;
     margin-top: 5px;
 }
 
+/*PROFESION ANIMATION*/
 #profession {
     font-family: "JetBrains Mono", monospace;
     font-style: italic;
     font-weight: 600;
     font-size: 25px;
-    color: whitesmoke;
+    color: rgb(245, 245, 245);
     padding: 10px;
     margin-top: -40px;
 }
@@ -92,9 +96,9 @@ body {
     50% { opacity: 0; }
 }
 
+/*LINKS ICONS*/
 #links {
     width: 30%;
-    color: whitesmoke;
     padding: 8px;
     margin-top: 10px;
 }
@@ -114,6 +118,14 @@ a, .linksicons {
     transform: scale(1.1);
 }
 
+/*DRAG KILLER*/
+img {
+    -webkit-user-drag: none; 
+    user-select: none;  
+    pointer-events: none;    
+}
+
+/*PROFILE PICTURE*/
 #photo {
     width: 220px;
     max-width: 100%; 
@@ -127,7 +139,7 @@ a, .linksicons {
     font-weight: 600;
     text-align: center;
     margin: 30px 0;
-    color: whitesmoke;
+    color: rgb(245, 245, 245);
     background: rgb(19, 21, 37);
     padding: 10px;
 }
@@ -202,24 +214,34 @@ a, .linksicons {
 
 .generic {
     background-color: black;
-    color: whitesmoke;
+    color: rgb(245, 245, 245);
     border-radius: 5px;
 }
 
 /* Section Colors */
-.skills { border-color: mediumpurple; }
-.projects { border: 5px solid mediumspringgreen; 
+.skills { border-color: rgb(147, 112, 216); }
+.projects { border: 5px solid rgb(0, 250, 154); 
             box-shadow: 0 0 10px rgba(0, 255, 127, 0.2); }
-.academic_islands { border-color: mediumturquoise; }
-.certifications_islands { border-color: mediumseagreen; }
-#about { border-color: mediumorchid; }
-#info { border-color: cadetblue; }
+.academic_islands { border-color: rgb(72, 209, 204); }
+.certifications_islands { border-color: rgb(60, 179, 113); }
+#about { border-color: rgb(186, 85, 211); }
+#info { border-color: rgb(95, 158, 160); }
+
+/*CONTACT COPY*/
+.copy {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.copy:hover {
+    color: rgb(95, 158, 160);
+}
 
 /* HR */
 hr {
     margin: 40px 0;
     height: 5px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border: none;
 }
 
@@ -228,6 +250,6 @@ footer {
     font-weight: 600;
     font-family: "JetBrains Mono", monospace;
     text-align: center;
-    color: whitesmoke;
+    color: rgb(245, 245, 245);
     margin: 30px 0;
 }
