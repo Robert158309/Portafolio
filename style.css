@@ -99,7 +99,6 @@ body {
 /*LINKS ICONS*/
 #links {
     display: flex;
-    align-items: center;
     gap: 12px;
     padding: 8px;
     margin-top: 10px;
@@ -119,6 +118,29 @@ a, .linksicons {
 
 .linksicons:hover {
     transform: scale(1.1);
+}
+
+/*MOBILE HEADER DESIGN*/
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #photo {
+        width: 150px;
+        height: auto;
+        order: -1;
+    }
+
+    #links {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
 }
 
 /*DRAG KILLER*/
