@@ -56,7 +56,7 @@ body {
     padding: 30px;
     align-items: center;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-top: 30px;
     border: 5px solid rgb(32, 226, 200);
     border-radius: 10px;
@@ -70,7 +70,7 @@ body {
 #name {
     font-family: "JetBrains Mono", monospace;
     font-weight: 800;
-    font-size: 50px;
+    font-size: 60px;
     color: rgb(245, 245, 245);
     padding: 10px;
     margin-top: 5px;
@@ -120,6 +120,20 @@ a, .linksicons {
     transform: scale(1.1);
 }
 
+/*DRAG KILLER*/
+img {
+    -webkit-user-drag: none;
+    user-select: none;   
+}
+
+/*PROFILE PICTURE*/
+#photo {
+    width: 230px;
+    max-width: 100%; 
+    height: auto;
+    border-radius: 5px;
+}
+
 /*MOBILE HEADER DESIGN*/
 @media (max-width: 768px) {
 
@@ -130,31 +144,20 @@ a, .linksicons {
     }
 
     #photo {
+        order: 1;
         width: 150px;
-        height: auto;
-        order: -1;
+    }
+
+    .header-text {
+        order: 2;
     }
 
     #links {
+        order: 3;
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 15px;
     }
-}
-
-/*DRAG KILLER*/
-img {
-    -webkit-user-drag: none;
-    user-select: none;   
-}
-
-/*PROFILE PICTURE*/
-#photo {
-    width: 220px;
-    max-width: 100%; 
-    height: auto;
-    border-radius: 5px;
 }
 
 /* TITLES */
