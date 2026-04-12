@@ -103,7 +103,6 @@ body {
     gap: 30px;
     padding: 8px;
     margin-top: 10px;
-    width: 30%;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -155,11 +154,13 @@ img {
 
     #links {
         order: 3;
-        width: 100%;
+        width: 90%;
         display: flex;
+        flex-wrap: wrap;
         padding: 0;
         justify-content: center;
         align-items: center;
+        margin: 0 auto;
     }
 }
 
