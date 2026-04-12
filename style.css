@@ -46,6 +46,7 @@ body {
     width: 90%;
     max-width: 1100px;
     margin: auto;
+    background-color: rgb(4, 5, 15);
 }
 
 /* HEADER */
@@ -99,17 +100,16 @@ body {
 /*LINKS ICONS*/
 #links {
     display: flex;
-    gap: 12px;
+    gap: 30px;
     padding: 8px;
     margin-top: 10px;
     width: 30%;
+    justify-content: center;
 }
 
 .linksicons {
     width: 35px;
     height: 35px;
-    margin-right: 10px;
-    margin-left: 10px;
 }
 
 a, .linksicons {
@@ -156,7 +156,9 @@ img {
         order: 3;
         width: 100%;
         display: flex;
+        padding: 0;
         justify-content: center;
+        align-items: center;
     }
 }
 
