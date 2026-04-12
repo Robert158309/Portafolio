@@ -208,10 +208,12 @@ img {
 
 #about, #info,
 .projects {
-    text-align: justify;
-    padding: 15px;
+    padding: 20px;
     border-bottom: 5px solid;
 }
+
+#info { text-align: center; }
+#about, .projects { text-align: justify; }
 
 .generic {
     background-color: black;
@@ -232,10 +234,23 @@ img {
 .copy {
     cursor: pointer;
     transition: 0.2s;
+    position: relative;
 }
 
+/*COPY HOVER AND ANIMATION*/
 .copy:hover {
-    color: rgb(95, 158, 160);
+    color: rgb(126, 218, 221);
+}
+
+.copy:hover::after {
+    content: "click para copiar";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    opacity: 0.6;
+    white-space: nowrap;
 }
 
 /* HR */
@@ -279,4 +294,20 @@ footer {
         align-items: center;
         width: 100%;
     }
+}
+
+/*COPIED MESSAGE*/
+#toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(19, 21, 37);
+    color: rgb(245, 245, 245);
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid rgb(32, 226, 200);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
 }
