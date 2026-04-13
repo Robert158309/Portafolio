@@ -217,7 +217,8 @@ img {
     border-bottom: 5px solid;
 }
 
-#info, .contacts { text-align: center; }
+#info, .contacts, .academic_islands,
+.certifications_islands { text-align: center; }
 #about, .projects { text-align: justify; }
 
 .generic {
