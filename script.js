@@ -1,4 +1,4 @@
-const text = "Desarrollador Web en formación";
+const text = "Desarrollador Web Junior";
 const animation = document.getElementById("profession");
 const toast = document.getElementById("toast");
 let i = 0;
