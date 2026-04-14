@@ -56,7 +56,7 @@ body {
     background-color: rgb(19, 21, 37);
     padding: 30px;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
     flex-wrap: nowrap;
     margin-top: 30px;
@@ -76,7 +76,7 @@ body {
     font-size: 60px;
     color: rgb(245, 245, 245);
     padding: 0px;
-    margin-top: 5px;
+    margin-top: 10px;
     line-height: 1.2;
 }
 
