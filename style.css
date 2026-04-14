@@ -139,10 +139,11 @@ img {
     font-family: "JetBrains Mono", monospace;
     font-weight: 600;
     text-align: center;
-    margin: 30px 0;
+    margin: 50px 0 5px 0;
     color: rgb(245, 245, 245);
     background: rgb(19, 21, 37);
     padding: 10px;
+    border-radius: 7px;
 }
 
 .subtitles{
@@ -258,14 +259,6 @@ img {
     font-size: 10px;
     opacity: 0.6;
     white-space: nowrap;
-}
-
-/* HR */
-hr {
-    margin: 40px 0;
-    height: 3px;
-    background-color: rgb(255, 255, 255);
-    border: none;
 }
 
 /* FOOTER */
