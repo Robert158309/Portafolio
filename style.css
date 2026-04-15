@@ -59,7 +59,7 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: rgb(19, 21, 37);
-    padding: 35px;
+    padding: 30px;
     flex-direction: row;
     align-items: center;
     gap: 20px;
