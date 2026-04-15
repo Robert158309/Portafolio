@@ -31,10 +31,15 @@
     font-style: italic;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /*Body*/
 body {
-    background-color: rgb(4, 5, 15);
+    background-color: rgb(4, 5, 15) ;
     font-family: "Inter", sans-serif;
+    font-size: clamp(14px, 1.5vw, 16px);
     line-height: 1.6;
     -webkit-user-select: none;
     -ms-user-select: none;
@@ -44,7 +49,7 @@ body {
 /* PRINCIPAL CONTAINER */
 .container {
     width: 90%;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: auto;
     background-color: rgb(4, 5, 15);
 }
@@ -54,15 +59,15 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: rgb(19, 21, 37);
-    padding: 30px;
+    padding: 35px;
     flex-direction: row;
     align-items: center;
     gap: 20px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin-top: 30px;
     border: 5px solid rgb(32, 226, 200);
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(32, 226, 200, 0.25);
+    box-shadow: 0 0 15px rgba(32, 226, 200, 0.30);
 }
 
 .header-text {
@@ -70,26 +75,28 @@ body {
     min-width: 0;
 }
 
+/*HEADER NAME*/
 #name {
     font-family: "JetBrains Mono", monospace;
     font-weight: 800;
-    font-size: 60px;
+    font-size: clamp(32px, 5vw, 60px);
     color: rgb(245, 245, 245);
     padding: 0px;
     margin-top: 10px;
     line-height: 1.2;
 }
 
-/*PROFESION ANIMATION*/
+/*HEADER PROFESION*/
 #profession {
     font-family: "JetBrains Mono", monospace;
     font-style: italic;
     font-weight: 600;
-    font-size: 25px;
+    font-size: clamp(18px, 2.5vw, 26px);
     color: rgb(245, 245, 245);
     padding: 0px;
 }
 
+/*PROFESION ANIMATION*/V
 #profession::after {
     content: "_";
     animation: blink 0.6s infinite;
@@ -108,11 +115,12 @@ body {
 }
 
 .linksicons {
-    width: 35px;
-    height: 35px;
+    width: clamp(28px, 5vw, 35px);
+    height: clamp(28px, 5vw, 35px);
     color: rgb(0, 255, 234);
 }
 
+/*LINKS ANIMATION*/
 a, .linksicons {
     transition: all 0.3s ease;
 }
@@ -129,7 +137,7 @@ img {
 
 /*PROFILE PICTURE*/
 #photo {
-    width: 230px;
+    width: clamp(120px, 30vw, 230px);
     max-width: 100%; 
     height: auto;
     border-radius: 5px;
@@ -139,6 +147,7 @@ img {
 .titles {
     font-family: "JetBrains Mono", monospace;
     font-weight: 600;
+    font-size: clamp(18px, 3vw, 28px);
     text-align: center;
     margin: 50px 0 5px 0;
     color: rgb(245, 245, 245);
@@ -147,9 +156,11 @@ img {
     border-radius: 7px;
 }
 
+/*SUBTITLES*/
 .subtitles{
     font-family: "JetBrains Mono", monospace;
     font-weight: 600;
+    font-size: clamp(16px, 2vw, 22px);
     text-align: center;
     padding: 15px;
     border: 2px solid rgb(101, 243, 120);
@@ -159,13 +170,13 @@ img {
 .project_name {
     font-family: "JetBrains Mono", monospace;
     font-weight: 600;
-    font-size: 22px;
+    font-size: clamp(18px, 1.5vw, 22px);
 }
 
 .names {
     font-family: "Inter", sans-serif;
     font-style: italic;
-    font-size: 18px;
+    font-size: clamp(14px, 1.5vw, 18px);
 }
 
 /* TWO COLUMNS */
@@ -206,8 +217,8 @@ img {
 
 .skills {
     text-align:justify;
-    padding-left: 50px;
-    padding-right: 10px;
+    padding-left: clamp(45px, 5vw, 50px);
+    padding-right: clamp(30px, 3vw, 40px);
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 5px solid;  
@@ -219,17 +230,19 @@ img {
     border-bottom: 5px solid;
 }
 
+/*TEXT ALIGN SECTION*/
 #info, .contacts, .academic_islands,
 .certifications_islands { text-align: center; }
 #about, .projects { text-align: justify; }
 
+/*GENERIC CLASS*/
 .generic {
     background-color: black;
     color: rgb(245, 245, 245);
     border-radius: 5px;
 }
 
-/* Section Colors */
+/* SECTION COLORS */
 .skills { border-color: rgb(147, 112, 216); }
 .projects { border: 5px solid rgb(0, 250, 154); 
             box-shadow: 0 0 10px rgba(0, 255, 127, 0.2); }
@@ -273,6 +286,23 @@ footer {
     padding: 5px;
 }
 
+/*COPIED MESSAGE*/
+#toast {
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(19, 21, 37);
+    color: rgb(245, 245, 245);
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid rgb(32, 226, 200);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
 /*MOBILE HEADER DESIGN*/
 @media (max-width: 768px) {
 
@@ -298,21 +328,8 @@ footer {
         gap: 20px;
         width: 100%;
     }
-}
 
-/*COPIED MESSAGE*/
-#toast {
-    text-align: center;
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgb(19, 21, 37);
-    color: rgb(245, 245, 245);
-    padding: 10px 20px;
-    border-radius: 8px;
-    border: 2px solid rgb(32, 226, 200);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
+    .container {
+        width: 95%;
+    }
 }
