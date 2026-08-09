@@ -165,23 +165,23 @@
 #info, #about, .projects { text-align: justify; }
 
 /* SECTION COLORS */
-.skills { border-color: var(--border-skills); }
+.skills { border-color: var(--borders); }
 
 .projects {
-    border: 5px solid var(--border-projects);
+    border: 5px solid var(--borders);
     box-shadow: 0 0 10px var(--shadow-projects);
 }
 
-.academic_islands { border-color: var(--border-academic); }
+.academic_islands { border-color: var(--borders); }
 
 .certifications_islands,
-.badges-footer { border-color: var(--border-certifications); }
+.badges-footer { border-color: var(--borders); }
 
-.contacts { border-color: var(--border-contacts); }
+.contacts { border-color: var(--borders); }
 
-#about { border-color: var(--border-about); }
+#about { border-color: var(--borders); }
 
-#info { border-color: var(--border-info); }
+#info { border-color: var(--borders); }
 
 /* MESSAGES */
 .messages {

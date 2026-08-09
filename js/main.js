@@ -1,7 +1,6 @@
 import "./ui.js";
-import "./particles.js";
 import "./navigation.js";
-import { initSnake } from "./snake.js";
+import "./contact.js";
 
 function waitForCanvasSize(callback) {
 

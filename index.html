@@ -26,13 +26,12 @@
 
         <title>Inicio  | Roberto</title>
 
-        <link rel = "preload" as = "image" href = "assets/img/photo.webp" as = "image">
-
         <link rel = "stylesheet" type = "text/css" href = "styles/base.css">
         <link rel = "stylesheet" type = "text/css" href = "styles/layout.css">
         <link rel = "stylesheet" type = "text/css" href = "styles/sections.css">
         <link rel = "stylesheet" type = "text/css" href = "styles/components.css">
         <link rel = "stylesheet" type = "text/css" href = "styles/animations.css">
+        <link rel = "stylesheet" type = "text/css" href = "styles/contact.css">
 
         <link rel = "icon" type = "image/png" href = "assets/img/icons/user-icon.png">
         <link rel = "canonical" href = "https://robert158309.github.io/portfolio/index.html">
@@ -90,8 +89,6 @@
                 </div>
 
             </section>
-
-            <img id = "photo" src = "assets/img/photo.webp" alt = "Personal photo">
 
         </header>
 
@@ -300,18 +297,44 @@
 
                 <h2 class = "titles">Contacto</h2>
 
-                <p class = "messages">
+                <section class = "contact-links">
+
+                    <section class = "contact-layout">
+
+                        <aside>
+
+                            <p class = "messages">
                     ¡Estoy abierto a nuevas oportunidades y colaboraciones! 😄<br>
                     Si tienes un proyecto en mente, ideas que quieras compartir o simplemente quieres charlar sobre tecnología, no dudes en escribirme.
                     Me gusta conocer nuevas personas del mundo del desarrollo y siempre estoy dispuesto a aprender algo nuevo. <br><br>
                     Puedes contactarme por correo o redes sociales, y te responderé lo más pronto posible. 💻
                 </p>
 
-                <section class = "two-columns">
+                        </aside>
 
-                    <a class = "generic contacts" href = "pages/contact.html">
-                        Ir al formulario de contacto →
-                    </a>
+                        <section>
+
+                            <fieldset>
+
+                                <legend>Hablemos 😄</legend>
+
+                                <form action = "https://formspree.io/f/xjgzkrzd" method = "POST" novalidate>
+
+                                    <input type = "text" name = "nombre" placeholder = "Tu nombre" required>
+
+                                    <input type = "email" name = "correo" placeholder = "Tu correo" required>
+
+                                    <textarea name = "mensaje" placeholder = "Escribe tu mensaje..." required></textarea>
+
+                                    <button type = "submit">Enviar mensaje</button>
+
+                                </form>
+
+                            </fieldset>
+
+                        </section>
+
+                    </section>
 
                 </section>
 
@@ -325,29 +348,14 @@
         <footer id = "page_footer">
 
             <p class = "footer-text">
-                Roberto Monzón © 2026 • Hecho con café, bugs y decisiones cuestionables <span id = "snake-toggle">☕</span>
+                Roberto Monzón © 2026 • Hecho con café, bugs y decisiones cuestionables
             </p>
-
-            <div id = "snake-container">
-
-                <p class = "snake-title">
-                    Cafés consumidos: <span id = "coffee-count">0</span> ☕
-                </p>
-
-                <canvas id = "snake-game"></canvas>
-
-                <div id = "game-over">
-                    <h2>Game Over 💀</h2>
-                    <button id = "restart-snake">Reintentar</button>
-                </div>
-
-            </div>
 
         </footer>
 
         <!-- ELEMENTS -->
         <div id = "toast"></div>
-        <canvas id = "particles"></canvas>
+        <div id = "form-toast"></div>
 
         <!-- CV LINK -->
         <a href = "assets/files/CV.pdf" class = "fab" target = "_blank" title = "Ver CV">

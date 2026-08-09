@@ -39,29 +39,22 @@
 /* COLORS */
 :root {
     /* BACKGROUNDS */
-    --bg-main: #04050f;
-    --bg-secondary: #131525;
-    --bg-card: #000000;
-    --bg-soft: #1315256e;
+    --bg-main: #000000;
+    --bg-secondary: #050505;
+    --bg-card: #080808;
+    --bg-soft: #0d0d0dcc;
     /* TEXT */
-    --text-main: #f5f5f5;
+    --text-main: #e6edf7;
     /* ACCENTS */
-    --accent-primary: #20e2c8;
-    --accent-links: #72bed1f1;
-    --accent-hover: #88acac;
-    --accent-badges-link: #2fa4e7;
-    /* BORDERS (sections) */
-    --border-subtitles: #65f378;
-    --border-skills: #9370d8;
-    --border-projects: #00fa9a;
-    --border-academic: #4091ee;
-    --border-certifications: #18c968;
-    --border-contacts: #5c90ca;
-    --border-about: #ba55d3;
-    --border-info: #48d1cc;
+    --accent-primary: #1769e0;
+    --accent-links: #3b82f6;
+    --accent-hover: #60a5fa;
+    --accent-badges-link: #2563eb;
+    /* BORDERS */
+    --borders: #123d7a;
     /* EFFECTS */
-    --shadow-primary: #20e2c84d;
-    --shadow-projects: #00ff7f33;
+    --shadow-primary: #1769e04d;
+    --shadow-projects: #2563eb33;
 }
 
 html {
@@ -76,7 +69,15 @@ html {
 
 /* BODY */
 body {
-    background-color: var(--bg-main);
+    background:
+        linear-gradient(
+            -45deg,
+            #000000,
+            #020617,
+            #030712,
+            #0a0f1f,
+            #020617
+        );
     font-family: "Inter", sans-serif;
     font-size: clamp(14px, 1.5vw, 16px);
     color: var(--text-main);
